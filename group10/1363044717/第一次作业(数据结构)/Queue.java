@@ -1,23 +1,23 @@
 package com.coding.basic;
 
-public class Queue {
+public class Queue<E> {
 
-	private ArrayList elementData = new ArrayList();
+	private LinkedList<E> elementData = new LinkedList();
 
 	/**
 	 * 进队列
 	 * @param o
 	 */
-	public void enQueue(Object o){
-		elementData.add(o);
+	public void enQueue(E o){
+		elementData.addLast(o);//添加到队尾
 	}
 
 	/**
 	 * 出队列
 	 * @return
 	 */
-	public Object deQueue(){
-		return elementData.remove(elementData.size()-1);
+	public E deQueue(){
+		return elementData.removeFirst();//移除队首
 	}
 	
 	public boolean isEmpty(){
