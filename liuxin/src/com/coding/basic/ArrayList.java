@@ -1,5 +1,5 @@
 package com.coding.basic;
-
+//教程；http://www.open-open.com/lib/view/open1414396787325.html
 public class ArrayList implements List {
 	//测试修改
 	private int size = 0;
