@@ -1,9 +1,9 @@
 package com.coding.basic;
 
-public class Stack {
+public class Stack<E> {
 
-	private ArrayList elementData = new ArrayList();
-	public void push(Object o){
+	private ArrayList<E> elementData = new ArrayList();
+	public void push(E o){
 		elementData.add(o);
 	}
 
@@ -11,14 +11,14 @@ public class Stack {
 	 * 移除栈顶并返回他
 	 * @return
 	 */
-	public Object pop(){
+	public E pop(){
 		return elementData.remove(elementData.size()-1);
 	}
 	/**
 	 * 得到栈顶元素
 	 * @return
 	 */
-	public Object peek(){
+	public E peek(){
 		return elementData.get(elementData.size()-1);
 	}
 	public boolean isEmpty(){
