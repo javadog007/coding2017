@@ -1,7 +1,7 @@
 package com.coding.basic;
 
 public class ArrayList implements List {
-	
+	//测试修改
 	private int size = 0;
 	
 	private Object[] elementData = new Object[100];
