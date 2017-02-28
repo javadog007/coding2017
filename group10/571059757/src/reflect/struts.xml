@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<action name="login" class="reflect.LoginAction">
+		<result name="success">/jsp/home.jsp</result>
+		<result name="fail">/jsp/error.jsp</result>
+	</action>
+	<action name="loginout" class="reflect.LoginAction">
+		<result name="success">/jsp/welcome.jsp</result>
+		<result name="fail">/jsp/error.jsp</result>
+	</action>
+</struts>

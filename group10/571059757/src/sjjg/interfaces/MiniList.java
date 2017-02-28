@@ -1,10 +1,10 @@
-package sjjg;
+package sjjg.interfaces;
 /**
  * 抽象出List标准
  * @author mengluo
  *
  */
-public interface List {
+public interface MiniList {
 	/**
 	 * @return List集合中元素的个数
 	 */
@@ -31,9 +31,8 @@ public interface List {
 	 /**
 	  * 在List集合最后端添加元素
 	  * @param e
-	  * @return
 	  */
-	 boolean add(Object e);
+	 void add(Object e);
 	 
 	 /**
 	  * 删除该元素在List集合中最小下标的数
@@ -68,4 +67,29 @@ public interface List {
 	  * @param element 被插入的元素
 	  */
 	 void add(int index, Object element);
+	 
+	 /**
+	  * 移除索引处的元素
+	  * @param index
+	  * @return
+	  */
+	 Object remove(int index);
+	 
+	 /**
+	  * 返回元素的索引
+	  * @param o
+	  * @return
+	  */
+	 int indexOf(Object o);
+	 
+	 /**
+	  * 返回元素最后一处索引
+	  * @param o
+	  * @return
+	  */
+	 int lastIndexOf(Object o);
+	 
+	 //... 迭代器先不实现
+	 
+	 
 }
